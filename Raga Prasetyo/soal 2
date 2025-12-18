@@ -1,0 +1,17 @@
+package main
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	var n float64
+	fmt.Scan(&n)
+
+	awal := int(math.Round(n * 10))
+	akhir := int(math.Ceil(n) * 10)
+
+	for i := awal + 1; i <= akhir; i++ {
+		fmt.Printf("%.1f\n", float64(i)/10)
+	}
+}
